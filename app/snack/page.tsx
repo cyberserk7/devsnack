@@ -13,7 +13,7 @@ export default function SnackPage() {
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="h-full w-full md:max-w-2xl mx-auto">
+    <div className="h-full w-full md:max-w-2xl mx-auto flex-1">
       {loading ? (
         <div className=" flex flex-col gap-14 items-center mt-20 text-center">
           <span className="text-lg md:text-xl">

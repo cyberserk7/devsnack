@@ -4,6 +4,8 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Suspense } from "react";
+import { Footer } from "@/components/footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -24,12 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("text-primaryText py-10", fredoka.className)}>
-        <div className="container mx-auto space-y-10 min-h-full px-5">
+      <body className={cn("text-primaryText py-10 h-full", fredoka.className)}>
+        <div className="container mx-auto flex flex-col gap-10 min-h-full px-5">
           <Suspense>
             <Navbar />
           </Suspense>
           {children}
+          <Footer />
+          <Analytics />
         </div>
       </body>
     </html>
