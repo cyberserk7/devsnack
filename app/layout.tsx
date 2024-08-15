@@ -27,9 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("text-primaryText py-10 h-full", fredoka.className)}>
+      <body className={cn("text-primaryText min-h-full", fredoka.className)}>
         <NextTopLoader color="#4EB97A" showSpinner={false} />
-        <div className="container mx-auto flex flex-col gap-10 min-h-full px-5">
+        <div className="container mx-auto flex flex-col gap-10 min-h-full px-5  py-10">
           <Suspense>
             <Navbar />
           </Suspense>
