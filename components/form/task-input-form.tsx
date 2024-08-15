@@ -61,7 +61,7 @@ export const TaskInputForm = ({
       </div>
       <Button
         className={cn(
-          "p-3 rounded-lg bg-accent hover:bg-accent/90 transition w-max cursor-pointer h-max text-base"
+          "p-3 rounded-lg bg-accent lg:hover:bg-accent/90 transition w-max cursor-pointer h-max text-base"
         )}
         disabled={loading || task.length === 0}
         onClick={onSubmit}

@@ -22,7 +22,7 @@ export const RecommendationItem = ({
       </span>
       <div className="flex items-center justify-between mt-5">
         <Button
-          className="bg-accent hover:bg-accent/90 text-base"
+          className="bg-accent lg:hover:bg-accent/90 text-base"
           onClick={() => setCurrIndex(index - 1)}
           disabled={index === 0}
           size={"sm"}
@@ -30,7 +30,7 @@ export const RecommendationItem = ({
           ⬅️ Back
         </Button>
         <Button
-          className="bg-primaryText hover:bg-primaryText/90 text-background text-base"
+          className="bg-primaryText lg:hover:bg-primaryText/90 text-background text-base"
           asChild
           size={"sm"}
         >
@@ -42,7 +42,7 @@ export const RecommendationItem = ({
           </Link>
         </Button>
         <Button
-          className="bg-accent hover:bg-accent/90 text-base"
+          className="bg-accent lg:hover:bg-accent/90 text-base"
           onClick={() => setCurrIndex(index + 1)}
           disabled={index === snackRecommendations.length - 1}
           size={"sm"}

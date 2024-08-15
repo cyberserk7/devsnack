@@ -28,7 +28,7 @@ export const Navbar = () => {
     >
       <div className="flex-1 p-2">
         <div
-          className="p-2 rounded-xl hover:bg-primaryText/20 transition w-max cursor-pointer"
+          className="p-2 rounded-xl lg:hover:bg-primaryText/20 transition w-max cursor-pointer"
           onClick={() => router.replace("/")}
         >
           <Image
@@ -52,7 +52,7 @@ export const Navbar = () => {
       <div className="flex-1 flex justify-end h-full p-2">
         {pathname === "/snack" && (
           <button
-            className="p-3 rounded-xl bg-accent hover:bg-accent/90 transition w-max cursor-pointer h-full"
+            className="p-3 rounded-xl bg-accent lg:hover:bg-accent/90 transition w-max cursor-pointer h-full"
             onClick={() => router.replace("/")}
           >
             🔄 Edit Mood

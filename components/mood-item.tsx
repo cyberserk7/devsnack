@@ -13,7 +13,7 @@ export const MoodItem = ({
 
   return (
     <div
-      className="px-2 py-5 border border-accent rounded-lg flex items-center justify-center text-base md:text-lg text-center cursor-pointer hover:bg-accent transition hover:shadow-md"
+      className="px-2 py-5 border border-accent rounded-lg flex items-center justify-center text-base md:text-lg text-center cursor-pointer lg:lg:hover:bg-accent transition lg:hover:shadow-md"
       onClick={() => router.replace(`/snack?mood=${value}`)}
     >
       {label}

@@ -8,7 +8,7 @@ export const Footer = () => {
         <Link
           href={"https://www.nilabjo.com"}
           target="_blank"
-          className="text-accent hover:text-accent/80 transition"
+          className="text-accent lg:hover:text-accent/80 transition"
         >
           @nilabjo
         </Link>
