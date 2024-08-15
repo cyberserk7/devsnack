@@ -23,10 +23,10 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "w-full md:max-w-2xl mx-auto p-2 rounded-2xl shadow-lg bg-secondary  flex items-center justify-between"
+        "w-full md:max-w-2xl mx-auto rounded-2xl shadow-lg bg-secondary  flex items-center justify-between"
       )}
     >
-      <div className="flex-1">
+      <div className="flex-1 p-2">
         <div
           className="p-2 rounded-xl hover:bg-primaryText/20 transition w-max cursor-pointer"
           onClick={() => router.replace("/")}
@@ -42,9 +42,14 @@ export const Navbar = () => {
         </div>
       </div>
       <h1 className="text-xl font-medium flex-1 text-center">
-        {pathname === "/" ? "DevSnack" : mood}
+        <span className="hidden md:block">
+          {pathname === "/" ? "DevSnack" : mood}
+        </span>
+        {pathname === "/" && (
+          <span className="text-base md:hidden">DevSnack</span>
+        )}
       </h1>
-      <div className="flex-1 flex justify-end h-full">
+      <div className="flex-1 flex justify-end h-full p-2">
         {pathname === "/snack" && (
           <button
             className="p-3 rounded-xl bg-accent hover:bg-accent/90 transition w-max cursor-pointer h-full"

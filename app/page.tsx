@@ -1,5 +1,4 @@
 import { CodingMoods } from "@/components/coding-moods";
-import { Suspense } from "react";
 
 export default function Home() {
   return (
