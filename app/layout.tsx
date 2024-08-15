@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("text-primaryText py-10 h-full", fredoka.className)}>
+        <NextTopLoader color="#4EB97A" />
         <div className="container mx-auto flex flex-col gap-10 min-h-full px-5">
           <Suspense>
             <Navbar />
@@ -35,7 +36,6 @@ export default function RootLayout({
           {children}
           <Footer />
           <Analytics />
-          <NextTopLoader color="#4EB97A" />
         </div>
       </body>
     </html>
