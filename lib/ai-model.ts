@@ -29,7 +29,7 @@ const generationConfig = {
       {
         role: "user",
         parts: [
-          {text: "Generate 5 junk food meal and snack recommendations for a developer who is burned out while writing backend logic. For each recommendation, include the snack name, a detailed reason that connects the developer's mood and the task the coder is doing and also motivates the coder to push through, a complementary item that pairs well with the snack, and relevant tags. Return the output in JSON format."},
+          {text: "Generate 5 totally random junk food meal and snack recommendations for a developer who is burned out while writing backend logic. For each recommendation, include the snack name, a detailed reason that connects the developer's mood and the task the coder is doing and also motivates the coder to push through, a complementary item that pairs well with the snack, and relevant tags. Return the output in JSON format."},
         ],
       },
       {

@@ -6,6 +6,7 @@ import { Navbar } from "@/components/navbar";
 import { Suspense } from "react";
 import { Footer } from "@/components/footer";
 import { Analytics } from "@vercel/analytics/react";
+import NextTopLoader from "nextjs-toploader";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <Analytics />
+          <NextTopLoader color="#4EB97A" />
         </div>
       </body>
     </html>
